@@ -1,3 +1,57 @@
+# MERN Stack Testing & Debugging Assignment
+
+## Testing Strategy
+
+- **Unit Tests**: Written for utility functions, React components, Redux reducers/actions, custom hooks, and Express middleware. Located in `client/src/tests/unit/` and `server/tests/unit/`.
+- **Integration Tests**: Cover API endpoints, database operations, authentication, and React components that interact with APIs. Located in `client/src/tests/integration/` and `server/tests/integration/`.
+- **End-to-End (E2E) Tests**: Use Cypress for user flows, navigation, and error handling. Located in `e2e/`.
+
+## Debugging Techniques
+
+- **Server**: Logging with `console.error`, global error handler in Express (`server/middleware/errorHandler.js`).
+- **Client**: Error boundaries in React (`client/src/components/ErrorBoundary.jsx`), browser dev tools.
+- **Performance**: Use React Profiler and Node.js performance hooks as needed.
+
+## Running Tests
+
+### Install dependencies
+```
+npm run install-all
+```
+
+### Set up test database
+```
+cd server
+npm run setup-test-db
+```
+
+### Run tests
+```
+# All tests
+npm test
+# Unit tests
+npm run test:unit
+# Integration tests
+npm run test:integration
+# E2E tests
+npm run test:e2e
+```
+
+
+
+
+**Author:** scylla8434
+
+## Submission Checklist
+- [x] All test files present
+- [x] Test scripts in package.json
+- [x] Debugging tools implemented
+- [x] Documentation updated
+- [x] Coverage screenshots included
+
+---
+
+**Ready for grading!**
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19932264&assignment_repo_type=AssignmentRepo)
 # Testing and Debugging MERN Applications
 
